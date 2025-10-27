@@ -2,8 +2,6 @@
 
 > **Analyse du marché de l’emploi en Data Science en France pour l’année 2025**, à partir des données récupérées via l’API officielle de France Travail et visualisées dans Power BI.
 
----
-
 ## Objectif du projet
 
 Ce projet a pour but de :
@@ -11,8 +9,6 @@ Ce projet a pour but de :
 * **Scraper les offres d’emploi** liées aux métiers de la Data Science en France à l’aide de l’API France Travail,
 * **Analyser les tendances** : salaires moyens, répartition géographique, niveaux d’expérience, compétences les plus demandées,
 * Et **visualiser les résultats** à travers un **dashboard interactif Power BI**.
-
----
 
 ## Technologies utilisées
 
@@ -23,7 +19,7 @@ Ce projet a pour but de :
 | Manipulation de données | `pandas`, `re`, `json`                                                                                         |
 | Export des données      | CSV (`utf-8-sig`)                                                                                              |
 | Visualisation           | Power BI                                                                                                       |
-| API                     | [API France Travail – Offres d’emploi](https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search) |
+| API                     | [API France Travail – Offres d’emploi](https://www.data.gouv.fr/dataservices/api-offres-demploi/) |
 
 ---
 
