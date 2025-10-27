@@ -62,7 +62,7 @@ Les données exportées sont ensuite **visualisées dans Power BI** à travers p
 
 ## 🖼️ Aperçu du Dashboard
 
-![Dashboard Data Science France 2025](cbb8857d-34b2-4659-9d36-3275fde3278d.png)
+![Dashboard Data Science France 2025](data.pdf)
 
 ---
 
