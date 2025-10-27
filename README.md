@@ -60,13 +60,13 @@ Les offres nettoyées sont enregistrées dans un fichier CSV :
 
 Les données exportées sont ensuite **visualisées dans Power BI** à travers plusieurs indicateurs .
 
-## 🖼️ Aperçu du Dashboard
+## Dashboard
 
-![Dashboard Data Science France 2025](data.pdf)
+[Dashboard Data Science France 2025](data.pdf)
 
 ---
 
-## 📊 Résultats clés
+## Résultats clés
 
 * Les métiers les plus demandés : **Data Engineer**, **Data Scientist**, **Data Analyst**
 * Les villes les plus dynamiques : **Paris, Nantes, Lyon, Bordeaux**
