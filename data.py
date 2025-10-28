@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import re
 
-token = "58eGq0uHZrQVs-Jq3hempvbmefs"
+token = ""
 url = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
 
 headers = {
@@ -46,7 +46,7 @@ competence_keywords = [
     "dash", "streamlit", "api", "json", "rest", "agile", "jira", "scrum"
 ]
 
-# 🔍 Fonction de détection du niveau d’expérience
+# fonction de détection du niveau d’expérience
 def detect_niveau(poste, description):
     text = (poste + " " + description).lower()
     if any(x in text for x in ["stage", "stagiaire", "internship"]):
@@ -86,7 +86,7 @@ for metier in metiers:
             competences_detectees = [kw for kw in competence_keywords if kw in desc_lower]
             competences_finales = list(set(competences_api + competences_detectees))
 
-            # ✅ Détection du niveau
+            # Détection du niveau
             niveau = detect_niveau(poste, description)
 
             all_offres.append({
@@ -102,7 +102,7 @@ for metier in metiers:
             })
 
     except requests.exceptions.RequestException as e:
-        print(f"❌ Erreur pour {metier} :", e)
+        print(f"Erreur pour {metier} :", e)
 
 df = pd.DataFrame(all_offres)
 df.drop_duplicates(subset=["Poste", "Entreprise", "Lieu"], inplace=True)
@@ -110,4 +110,4 @@ df = df[df["Description"].str.len() > 30]
 
 df.to_csv("offres_data_jobs_france_2025_niveau.csv", index=False, encoding="utf-8-sig")
 
-print(f"✅ Export terminé : {len(df)} offres valides sauvegardées dans 'offres_data_jobs_france_2025_niveau.csv'")
+print(f"Export terminé : {len(df)} offres valides sauvegardées dans 'offres_data_jobs_france_2025_niveau.csv'")
